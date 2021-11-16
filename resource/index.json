@@ -1,5 +1,5 @@
 {
-    "sourceName":"github",
+    "updateTime":"2021-11-16 00:00:00",
     "packages":[
         {
             "Id": "frpc",
@@ -7,11 +7,16 @@
             "Description": "Frp Client 的描述",
             "Author": "fatedier",
             "HomePage": "https://github.com/fatedier/frp",
-            "License": "Apache License 2.0",
-            "Versions": {
-                "Version": "v0.38.0",
-                "Url": "https://github.com/fatedier/frp/releases/download/v0.38.0/frp_0.38.0_windows_amd64.zip"
-            }
+            "License": {
+                "Name": "Apache License 2.0",
+                "Url": "https://github.com/fatedier/frp/raw/master/LICENSE"
+            },
+            "Versions": [
+                {
+                    "Name": "v0.38.0",
+                    "Url": "https://github.com/fatedier/frp/releases/download/v0.38.0/frp_0.38.0_windows_amd64.zip"
+                }
+            ]
         }
     ]
 }
