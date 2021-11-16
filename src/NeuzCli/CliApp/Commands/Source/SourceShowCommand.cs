@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Spectre.Console.Cli;
 
-namespace NeuzCli.Commands
+namespace NeuzCli.CliApp.Commands.Source
 {
-    internal class SystemInfoCommand : Command<SystemInfoCommand.Settings>
+    internal class SourceShowCommand : Command<SourceShowCommand.Settings>
     {
-        internal static string Description = "显示操作系统信息";
+        internal static string Description = "源管理 - 查看";
 
         internal class Settings : CommandSettings
         {
@@ -13,7 +13,7 @@ namespace NeuzCli.Commands
 
         public override int Execute([NotNull] CommandContext context, [NotNull] Settings settings)
         {
-            Utils.PrintSystemInfo();
+            Features.ShowCurrentSource();
             return 0;
         }
     }

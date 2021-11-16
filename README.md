@@ -3,31 +3,37 @@ Neuz CLI tool
 
 
 cli
-    search
-    search <arg>
-    search --id <arg>
-    search --name <arg>
+    app list
+    app search
+    app search <APP_NAME>
+    app add <APP_NAME>
+    app remove <APP_NAME>
+    app run <APP_NAME>
 
-    list
-    list --installed -i
+    project add <PROJECT_NAME>
+    project remove <PROJECT_NAME>
+    project list
+    project config <PROJECT_NAME>
     
-    install <arg>
-    install --run -r <arg>
+    source update
+    source set <SOURCE_URL>
+    source show
+    source reset
 
-    uninstall <arg>
-
-    run <arg>
-
-    runtimecheck
+    info
 
 
 app
-    运行环境检查
-    运行环境安装
-    依赖服务安装
-    依赖服务卸载
-    应用安装
-    应用卸载
-    工具安装
-    工具卸载
-    工具运行
+    系统运行环境检测
+        运行时安装
+    应用管理 - 安装指定的应用程序
+    应用管理 - 卸载指定的应用程序
+    应用管理 - 列出已安装的应用程序
+        <应用启动>
+    源管理 - 查看
+    源管理 - 更新
+    源管理 - 设置
+    源管理 - 还原
+    退出
+    
+
