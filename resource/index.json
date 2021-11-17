@@ -1,6 +1,6 @@
 {
-    "updateTime":"2021-11-16 00:00:00",
-    "packages":[
+    "UpdateTime":"2021-11-16 00:00:00",
+    "Packages":[
         {
             "Id": "frpc",
             "Name": "Frp Client",
