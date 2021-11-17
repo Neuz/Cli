@@ -13,7 +13,7 @@ public partial class Utils
     public static string? ReadRegistry(string subKey, string valueName)
     {
         using var key = Registry.LocalMachine.CreateSubKey(Global.RegistryBaseKey).CreateSubKey(subKey);
-        return key.GetValue(valueName)?.ToString() ?? null;
+        return key.GetValue(valueName)?.ToString();
     }
 
     [SupportedOSPlatform("windows")]

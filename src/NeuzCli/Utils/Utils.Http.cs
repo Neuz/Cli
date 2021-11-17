@@ -8,8 +8,5 @@ namespace NeuzCli;
 /// </summary>
 public partial class Utils
 {
-    public static async Task<IndexCls> QueryIndex(string url)
-    {
-        return await url.WithTimeout(10).GetJsonAsync<IndexCls>();
-    }
+    public static async Task<IndexCls> GetIndexJson(string url, int timeout = 10) => await url.WithTimeout(timeout).GetJsonAsync<IndexCls>();
 }

@@ -13,7 +13,7 @@ namespace NeuzCli.CliApp.Commands
 
         public override int Execute([NotNull] CommandContext context, [NotNull] Settings settings)
         {
-            Features.ShowSystemInfo();
+            // ConsoleApp.Features.ShowSystemInfo();
             return 0;
         }
     }

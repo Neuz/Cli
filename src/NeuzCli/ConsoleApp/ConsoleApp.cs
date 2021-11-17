@@ -1,4 +1,4 @@
-﻿using NeuzCli.ConsoleApp.Models;
+﻿using NeuzCli.ConsoleApp.Features;
 using Spectre.Console;
 
 namespace NeuzCli.ConsoleApp
@@ -27,12 +27,11 @@ namespace NeuzCli.ConsoleApp
             AnsiConsole.Status()
                        .Spinner(Spinner.Known.SimpleDotsScrolling)
                        .AutoRefresh(true)
-                       .Start("初始化", ctx =>
+                       .StartAsync("初始化", async ctx =>
                        {
-                           Features.Initialization();
+                           await BaseFeature.Initialization();
                            SetMenus();
-                           Thread.Sleep(2000);
-                       });
+                       }).Wait();
 
             while (true)
             {
@@ -45,13 +44,9 @@ namespace NeuzCli.ConsoleApp
 
         private void SetMenus()
         {
-            _menus.Add(Menus.RuntimeCheck);
-            _menus.Add(Menus.AppAdd);
-            _menus.Add(Menus.AppRemove);
-            _menus.Add(Menus.AppList);
-            _menus.Add(Menus.SourceShow);
-            _menus.Add(Menus.SourceSet);
-            _menus.Add(Menus.SourceReset);
+            _menus.Add(Menus.System);
+            _menus.Add(Menus.Application);
+            _menus.Add(Menus.SourceMenu);
             _menus.Add(Menus.Exit);
         }
     }

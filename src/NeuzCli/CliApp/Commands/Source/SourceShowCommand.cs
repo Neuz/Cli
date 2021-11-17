@@ -13,7 +13,7 @@ namespace NeuzCli.CliApp.Commands.Source
 
         public override int Execute([NotNull] CommandContext context, [NotNull] Settings settings)
         {
-            Features.ShowCurrentSource();
+            // ConsoleApp.Features.ShowCurrentSource();
             return 0;
         }
     }

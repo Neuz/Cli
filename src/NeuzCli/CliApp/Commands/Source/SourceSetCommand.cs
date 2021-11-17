@@ -17,7 +17,7 @@ namespace NeuzCli.CliApp.Commands.Source
 
         public override int Execute([NotNull] CommandContext context, [NotNull] Settings settings)
         {
-            Features.SetSource(settings.Url);
+            // ConsoleApp.Features.SetSource(settings.Url);
             return 0;
         }
     }

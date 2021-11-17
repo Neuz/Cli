@@ -35,8 +35,15 @@ namespace NeuzCli
         public static string ConfigPath { get; set; }
 
         /// <summary>
+        /// Neuz Cli Index 文件路径
+        /// </summary>
+        public static string IndexPath { get; set; }
+
+        /// <summary>
         /// 配置
         /// </summary>
-        public static ConfigCls Config { get; set; }
+        public static ConfigCls? Config { get; set; }
+
+        public static IndexCls? Index { get; set; }
     }
 }
