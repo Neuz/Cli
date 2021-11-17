@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.Win32.Registry" Version="6.0.0-preview.5.21301.5" />
     <PackageReference Include="Neuz.DevKit.Extensions" Version="0.0.8" />
     <PackageReference Include="Spectre.Console" Version="0.42.0" />
+    <PackageReference Include="Spectre.Console.Extensions.Progress" Version="0.3.0" />
   </ItemGroup>
 
 </Project>

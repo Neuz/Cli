@@ -52,7 +52,7 @@ namespace NeuzCli.ConsoleApp
             _menus.Add(Menus.SourceShow);
             _menus.Add(Menus.SourceSet);
             _menus.Add(Menus.SourceReset);
-            _menus.Add(Menus.ExitMenu);
+            _menus.Add(Menus.Exit);
         }
     }
 }

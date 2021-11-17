@@ -17,7 +17,7 @@ namespace NeuzCli.CliApp.Commands.App
 
         public override int Execute(CommandContext context, Settings settings)
         {
-            Features.CliAppSearch(settings.AppName);
+            Features.CliApp.Search(settings.AppName);
             return 0;
         }
     }

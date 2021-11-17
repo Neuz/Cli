@@ -8,7 +8,7 @@ namespace NeuzCli.ConsoleApp
         {
             Name        = "AppAdd",
             Description = "应用管理 - 安装指定的应用程序",
-            Action      = _ => throw new NotImplementedException()
+            Action      = _ => Features.ConsoleApp.AppAdd()
         };
     }
 }

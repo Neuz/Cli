@@ -4,7 +4,7 @@ namespace NeuzCli.ConsoleApp
 {
     internal partial class Menus
     {
-        public static MenuCls ExitMenu = new()
+        public static MenuCls Exit = new()
         {
             Name        = "Exit",
             Description = "退出",
