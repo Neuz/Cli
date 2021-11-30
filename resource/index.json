@@ -7,6 +7,7 @@
             "Description": ".net framework 4.8",
             "Author": "Author",
             "HomePage": "ssadfa",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -19,6 +20,7 @@
             "Description": ".net 6",
             "Author": "Author",
             "HomePage": "ssadfa",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -31,9 +33,10 @@
             "Description": "MySQL数据库",
             "Author": "Author",
             "HomePage": "ssadfa",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
             "License": {
                 "Name": "MIT",
-                "Url": "https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip"
+                "Url": ""
             },
             "PackageType": "DataBase"
         },
@@ -43,6 +46,7 @@
             "Description": "Redis 6.2",
             "Author": "Author",
             "HomePage": "ssadfa",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -55,6 +59,7 @@
             "Description": "Nginx",
             "Author": "Author",
             "HomePage": "ssadfa",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
             "License": {
                 "Name": "MIT",
                 "Url": ""
