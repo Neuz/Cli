@@ -1,22 +1,17 @@
 {
-    "UpdateTime":"2021-11-16 00:00:00",
-    "Packages":[
+    "UpdateTime": "2021-11-30T16:59:41.5597308+08:00",
+    "Packages": [
         {
-            "Id": "frpc",
-            "Name": "Frp Client",
-            "Description": "Frp Client 的描述",
-            "Author": "fatedier",
-            "HomePage": "https://github.com/fatedier/frp",
+            "Id": "123",
+            "Name": "1111111",
+            "Description": "Description",
+            "Author": "Author",
+            "HomePage": "ssadfa",
             "License": {
-                "Name": "Apache License 2.0",
-                "Url": "https://github.com/fatedier/frp/raw/master/LICENSE"
+                "Name": "MIT",
+                "Url": "ASDFASDFASDFA"
             },
-            "Versions": [
-                {
-                    "Name": "v0.38.0",
-                    "Url": "https://github.com/fatedier/frp/releases/download/v0.38.0/frp_0.38.0_windows_amd64.zip"
-                }
-            ]
+            "PackageType": "None"
         }
     ]
 }
