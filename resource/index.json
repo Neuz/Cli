@@ -8,7 +8,7 @@
             "Author": "Author",
             "HomePage": "ssadfa",
             "Url":"https://tmp-titan.vx-cdn.com:616/file-61a723e1954d7/net48.zip",
-            "DefaultPath":"\\Runtime\\net48",
+            "DefaultPath":"Runtime/net48",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -22,7 +22,7 @@
             "Author": "Author",
             "HomePage": "ssadfa",
             "Url":"https://tmp-titan.vx-cdn.com:616/file-61a714152e8bc/MySQL5.7.36.zip",
-            "DefaultPath":"\\Services\\MySQL5.7.36",
+            "DefaultPath":"Services/MySQL5.7.36",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -36,7 +36,7 @@
             "Author": "Author",
             "HomePage": "ssadfa",
             "Url":"",
-            "DefaultPath":"\\Services\\Redis6.2",
+            "DefaultPath":"Services/Redis6.2",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -50,7 +50,7 @@
             "Author": "Author",
             "HomePage": "ssadfa",
             "Url":"",
-            "DefaultPath":"\\Services\\Nginx",
+            "DefaultPath":"Services/Nginx",
             "License": {
                 "Name": "MIT",
                 "Url": ""
