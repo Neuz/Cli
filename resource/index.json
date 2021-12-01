@@ -2,25 +2,13 @@
     "UpdateTime": "2021-11-30T16:59:41.5597308+08:00",
     "Packages": [
         {
-            "Id": "dnfx48",
+            "Id": "net48",
             "Name": ".net framework 4.8",
             "Description": ".net framework 4.8",
             "Author": "Author",
             "HomePage": "ssadfa",
-            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
-            "License": {
-                "Name": "MIT",
-                "Url": ""
-            },
-            "PackageType": "Runtime"
-        },
-        {
-            "Id": "dn6",
-            "Name": ".net 6",
-            "Description": ".net 6",
-            "Author": "Author",
-            "HomePage": "ssadfa",
-            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a714152e8bc/net48.zip",
+            "DefaultPath":"\\Runtime\\net48",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -33,7 +21,8 @@
             "Description": "MySQL数据库",
             "Author": "Author",
             "HomePage": "ssadfa",
-            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
+            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a714152e8bc/MySQL5.7.36.zip",
+            "DefaultPath":"\\Services\\MySQL5.7.36",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -46,7 +35,8 @@
             "Description": "Redis 6.2",
             "Author": "Author",
             "HomePage": "ssadfa",
-            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
+            "Url":"",
+            "DefaultPath":"\\Services\\Redis6.2",
             "License": {
                 "Name": "MIT",
                 "Url": ""
@@ -59,7 +49,8 @@
             "Description": "Nginx",
             "Author": "Author",
             "HomePage": "ssadfa",
-            "Url":"https://tmp-titan.vx-cdn.com:616/file-61a629018b615/MySQL5.7.36.zip",
+            "Url":"",
+            "DefaultPath":"\\Services\\Nginx",
             "License": {
                 "Name": "MIT",
                 "Url": ""
