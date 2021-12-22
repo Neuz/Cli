@@ -27,7 +27,7 @@
                 "Name": "MIT",
                 "Url": ""
             },
-            "PackageType": "DataBase"
+            "PackageType": "Service"
         },
         {
             "Id": "redis.6.2",
@@ -41,7 +41,7 @@
                 "Name": "MIT",
                 "Url": ""
             },
-            "PackageType": "DataBase"
+            "PackageType": "Service"
         },
         {
             "Id": "Nginx",
@@ -55,7 +55,7 @@
                 "Name": "MIT",
                 "Url": ""
             },
-            "PackageType": "WebServer"
+            "PackageType": "Service"
         }
     ]
 }
