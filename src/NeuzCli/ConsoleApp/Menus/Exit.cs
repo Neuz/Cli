@@ -6,6 +6,6 @@ public partial class Menus
     {
         Name        = "Exit",
         Description = "退出",
-        Action      = _ => Environment.Exit(0)
+        Action      = () => Environment.Exit(0)
     };
 }

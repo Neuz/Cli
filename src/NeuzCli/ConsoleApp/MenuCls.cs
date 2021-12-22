@@ -6,7 +6,7 @@
 
         public string Description { get; set; }
 
-        public Action<Dictionary<string, object>> Action { get; set; } = ctx => { };
+        public Action Action { get; set; } = () => { };
 
         public IEnumerable<MenuCls> SubMenus { get; set; } = new List<MenuCls>();
 

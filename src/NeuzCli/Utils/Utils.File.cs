@@ -1,5 +1,6 @@
-﻿#nullable enable
+﻿using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Unicode;
 
 namespace NeuzCli;
 
@@ -8,7 +9,21 @@ namespace NeuzCli;
 /// </summary>
 public partial class Utils
 {
-    public static async Task WriteFileAsync<T>(T obj, string filePath) where T : class, new() => await File.WriteAllTextAsync(filePath, JsonSerializer.Serialize(obj));
+    private static readonly JsonSerializerOptions DefaultJsonSerializerOptions = new()
+    {
+        WriteIndented = true,
+        Encoder       = JavaScriptEncoder.Create(UnicodeRanges.All)
+    };
 
-    public static async Task<T?> ReadFileAsync<T>(string configPath) where T : class, new() => JsonSerializer.Deserialize<T>(await File.ReadAllTextAsync(configPath));
+    public static async Task<T> WriteFileAsync<T>(T obj, string filePath) where T : class?, new()
+    {
+        Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
+        await File.WriteAllTextAsync(filePath, JsonSerializer.Serialize(obj, DefaultJsonSerializerOptions));
+        return obj;
+    }
+
+    public static async Task<T?> ReadFileAsync<T>(string filePath) where T : class, new()
+    {
+        return JsonSerializer.Deserialize<T>(await File.ReadAllTextAsync(filePath));
+    }
 }

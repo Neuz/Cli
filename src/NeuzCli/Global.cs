@@ -14,36 +14,25 @@ namespace NeuzCli
         /// </summary>
         public static string AppName = "NeuzCli";
 
+        public static string AppNeuzFileName = "app.neuz";
+
         /// <summary>
         /// 注册表BaseKey
         /// </summary>
         public static string RegistryBaseKey => $"SOFTWARE\\{Organization}";
 
-        /// <summary>
-        /// AppData路径
-        /// </summary>
-        public static string AppDataPath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), Organization, AppName);
+        public static string CliInstallPath { get; set; }
 
-        /// <summary>
-        /// Neuz Cli 临时文件路径
-        /// </summary>
-        public static string TmpPath { get; set; }
+        public static string? NeuzInstallPath { get; set; }
 
-        /// <summary>
-        /// Neuz Cli 配置文件路径
-        /// </summary>
-        public static string ConfigPath { get; set; }
+        public static string? CliTmpPath { get; set; }
 
-        /// <summary>
-        /// Neuz Cli Index 文件路径
-        /// </summary>
-        public static string IndexPath { get; set; }
+        public static string? CliAppConfigFile { get; set; }
 
-        /// <summary>
-        /// 配置
-        /// </summary>
-        public static ConfigCls? Config { get; set; }
+        public static AppConfigCls? CliAppConfig { get; set; }
 
-        public static IndexCls? Index { get; set; }
+        public static string? LocalIndexFile { get; set; }
+
+        public static IndexCls? LocalIndex { get; set; }
     }
 }

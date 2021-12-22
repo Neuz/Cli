@@ -1,44 +1,60 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace NeuzCli.Models
+namespace NeuzCli.Models;
+
+public class IndexCls
 {
-    public class IndexCls
+    public DateTime UpdateTime { get; set; } = DateTime.Now;
+
+    public List<PackageCls> Packages { get; set; } = new();
+
+    public class PackageCls
     {
-        public string UpdateTime { get; set; }
+        public string? Id { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+        public string? Author { get; set; }
+        public string? HomePage { get; set; }
+        public string? Url { get; set; }
+        public string? Hash { get; set; }
+        public string? DefaultPath { get; set; }
+        public LicenseCls? License { get; set; }
+        public ExecutorCls? Executor { get; set; } = null;
+        public ExecutorCls? Installer { get; set; } = null;
+        public ExecutorCls? UnInstaller { get; set; } = null;
+        public PackageTypeEnum PackageType { get; set; } = PackageTypeEnum.Tool;
 
-        public List<PackageCls> Packages { get;set; }
 
-        public class PackageCls
+        public class LicenseCls
         {
-            public string Id { get; set; }
-            public string Name { get; set; }
-            public string Description { get; set; }
-            public string Author { get; set; }
-            public string HomePage { get; set; }
-            public LicenseCls License { get; set; }
-            public List<VersionCls> Versions { get; set; }
+            public string? Name { get; set; }
+            public string? Url { get; set; }
 
-            public class VersionCls
-            {
-                public string Name { get; set; }
-                public string Url { get; set; }
+            public override string ToString() => $"{Name} ({Url})";
+        }
 
-                public override string ToString() => $"{Name}";
-            }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public enum PackageTypeEnum
+        {
+            Runtime,
+            Service,
+            Tool
+        }
 
-            public class LicenseCls
-            {
-                public string Name { get; set; }
-                public string Url { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public enum ExecuteTypeEnum
+        {
+            Script,
+            Exe,
+            InsideMySQL,
+            InsideNginx,
+        }
 
-                public override string ToString() => $"{Name} ({Url})";
-            }
-
-            [JsonIgnore]
-            public bool IsInstalled { get; set; }
-
-            [JsonIgnore]
-            public string InstallPath { get; set; }
+        public class ExecutorCls
+        {
+            public string? Path { get; set; }
+            public string? Args { get; set; }
+            public ExecuteTypeEnum ExecuteType { get; set; }
         }
     }
 }
