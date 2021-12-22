@@ -1,5 +1,5 @@
 {
-  "UpdateTime": "2021-11-30T16:59:41.5597308+08:00",
+  "UpdateTime": "2021-12-22T19:41:23.6881829+08:00",
   "Packages": [
     {
       "Id": "net48",
@@ -7,41 +7,43 @@
       "Description": ".net framework 4.8",
       "Author": "Author",
       "HomePage": "ssadfa",
-      "Url": "https://tmp-titan.vx-cdn.com:616/file-61a723e1954d7/net48.zip",
-      "DefaultPath": "Runtime/net48",
+      "Url": "https://tmp-reach.vx-cdn.com:616/file-61c2d61ee9652/net48.zip",
+      "Hash":"",
+      "DefaultPath": "Runtime\\net48",
       "License": {
         "Name": "MIT",
         "Url": ""
       },
-      "PackageType": "Runtime"
+      "PackageType": "Runtime",
+      "Executor": null,
+      "Installer": {
+        "Path": "ndp48-x86-x64-allos-enu.exe",
+        "Args": "/q /norestart",
+        "ExecuteType": "Exe"
+      },
+      "UnInstaller": null
     },
     {
-      "Id": "mysql.5.7.36",
+      "Id": "MySQL.5.7.36",
       "Name": "MySQL 5.7.36",
       "Description": "MySQL数据库",
       "Author": "Author",
       "HomePage": "ssadfa",
-      "Url": "https://tmp-titan.vx-cdn.com:616/file-61a714152e8bc/MySQL5.7.36.zip",
-      "DefaultPath": "Services/MySQL5.7.36",
+      "Url": "https://tmp-reach.vx-cdn.com:616/file-61c2d5eb3085a/MySQL5.7.36.zip",
+      "Hash":"",
+      "DefaultPath": "Services\\MySQL5.7.36",
       "License": {
         "Name": "MIT",
         "Url": ""
       },
-      "PackageType": "Service"
-    },
-    {
-      "Id": "redis.6.2",
-      "Name": "Redis 6.2",
-      "Description": "Redis 6.2",
-      "Author": "Author",
-      "HomePage": "ssadfa",
-      "Url": "",
-      "DefaultPath": "Services/Redis6.2",
-      "License": {
-        "Name": "MIT",
-        "Url": ""
+      "PackageType": "Service",
+      "Executor": null,
+      "Installer": {
+        "ExecuteType": "InsideMySQL"
       },
-      "PackageType": "Service"
+      "UnInstaller": {
+        "ExecuteType": "InsideMySQL"
+      }
     },
     {
       "Id": "Nginx",
@@ -50,12 +52,20 @@
       "Author": "Author",
       "HomePage": "ssadfa",
       "Url": "",
-      "DefaultPath": "Services/Nginx",
+      "Hash":"",
+      "DefaultPath": "Services\\Nginx",
       "License": {
         "Name": "MIT",
         "Url": ""
       },
-      "PackageType": "Service"
+      "PackageType": "Service",
+      "Executor": null,
+      "Installer": {
+        "ExecuteType": "InsideNginx"
+      },
+      "UnInstaller": {
+        "ExecuteType": "InsideNginx"
+      }
     }
   ]
 }
