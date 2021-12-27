@@ -15,7 +15,6 @@
         "Url": ""
       },
       "PackageType": "Runtime",
-      "Executor": null,
       "Installer": {
         "Path": "ndp48-x86-x64-allos-enu.exe",
         "Args": "/q /norestart",
@@ -37,12 +36,11 @@
         "Url": ""
       },
       "PackageType": "Service",
-      "Executor": null,
       "Installer": {
-        "ExecuteType": "InsideMySQL"
+        "ExecuteType": "Exe"
       },
       "UnInstaller": {
-        "ExecuteType": "InsideMySQL"
+        "ExecuteType": "Exe"
       }
     },
     {
@@ -61,10 +59,10 @@
       "PackageType": "Service",
       "Executor": null,
       "Installer": {
-        "ExecuteType": "InsideNginx"
+        "ExecuteType": "Exe"
       },
       "UnInstaller": {
-        "ExecuteType": "InsideNginx"
+        "ExecuteType": "Exe"
       }
     }
   ]
